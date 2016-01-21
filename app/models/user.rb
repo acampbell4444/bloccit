@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_many :posts
 
   before_save {self.email = email.downcase}
+  before_save {self.role  ||= :member }
 
   EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
@@ -15,5 +16,6 @@ class User < ActiveRecord::Base
              length: { minimum: 3, maximum: 100 },
              format: { with: EMAIL_REGEX }
 
-   has_secure_password
+  has_secure_password
+  enum role: [:member, :admin]
 end

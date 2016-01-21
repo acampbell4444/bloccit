@@ -61,7 +61,7 @@ class TopicsController < ApplicationController
   private
 
   def topic_params
-    params.require(:topic).permit(:name, :description, :public)
+    params.require(:topic).permit(:name, :description, :private)
   end
 
   def authorize_user

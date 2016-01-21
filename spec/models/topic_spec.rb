@@ -13,12 +13,12 @@ RSpec.describe Topic, type: :model do
       expect(topic).to respond_to(:description)
     end
 
-    it "should respond to public" do
-      expect(topic).to respond_to(:public)
+    it "should respond to private" do
+      expect(topic).to respond_to(:private)
     end
 
     it "should be public by default" do
-      expect(topic.public).to be(true)
+      expect(topic.private).to be(false)
     end
   end
 end

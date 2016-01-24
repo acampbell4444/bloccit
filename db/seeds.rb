@@ -38,17 +38,17 @@ end
   )
 end
 
-admin = User.create!(
-  name:     'Admin User',
-  email:    'admin@example.com',
-  password: 'helloworld',
-  role:     'admin'
-)
-
 member = User.create!(
   name:     'Member User',
-  email:    'member@example.com',
+  email:    'acampbell44@hotmail.com',
   password: 'helloworld'
+)
+
+admin = User.create!(
+  name:     'alan',
+  email:    'alancampbell4444@gmail.com',
+  password: 'helloworld',
+  role:     'admin'
 )
 
 puts "Seed finished"

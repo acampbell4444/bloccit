@@ -49,7 +49,7 @@ class TopicsController < ApplicationController
   def destroy
     @topic = Topic.find(params[:id])
 
-    if @topic.destroy
+    if @topic.delete
       flash[:notice] = "\"#{@topic.name}\" was deleted successfully."
       redirect_to action: :index
     else

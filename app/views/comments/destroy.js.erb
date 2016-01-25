@@ -1,0 +1,5 @@
+<% if @comment.destroyed? %>
+   $('#comment-' +<%= @comment.id %>).hide();
+ <% else %>
+   $('.js-comments-count').html("<%= pluralize(@comment.user.comments.count, 'comment') %>");
+ <% end %>

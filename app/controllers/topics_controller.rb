@@ -67,6 +67,12 @@ class TopicsController < ApplicationController
 
   private
 
+  def publically_viewable
+  end
+
+  def privately_viewable
+  end
+
   def topic_params
     params.require(:topic).permit(:name, :description, :private)
   end

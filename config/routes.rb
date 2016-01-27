@@ -23,11 +23,15 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   namespace :api do
-     namespace :v1 do
-       resources :users, only: [:index, :show]
-       resources :users, only: [:index, :show, :create, :update]
-       resources :topics, except: [:edit, :new]
-
-     end
-   end
+    namespace :v1 do
+      resources :users, only: [:index, :show, :create, :update]
+      resources :topics, except: [:edit, :new] do
+        member do
+        post :create_post
+        end
+      end
+      resources :posts, only: [:index, :show, :update, :destroy]
+      resources :comments, only: [:index, :show]
+    end
+  end
 end

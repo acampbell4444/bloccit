@@ -1,31 +1,30 @@
-== README
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
+#Bloccit#
 
-Made with my mentor at [Bloc](http://bloc.io).
+This application, which is a Reddit Clone, taught me the fundamentals of web development with Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bloccit users may add posts to topics, add comments to posts, favorite posts, upvote and downvote posts, and edit their own posts. Administrative user can create new topics, as well as all other actions. Posts are scoped according to two factors: time of creation and popularity among other users.
 
-Things you may want to cover:
+Highlights:
 
-* Ruby version
+* Authorization from Scratch
 
-* System dependencies
+* User roles from Scratch
 
-* Configuration
+* Bootstrap
 
-* Database creation
+* Factory Girl and Shoulda Gems
 
-* Database initialization
+* Plenty of Rspecs
 
-* How to run the test suite
+* Glyphicons
 
-* Services (job queues, cache servers, search engines, etc.)
+* Sessions
 
-* Deployment instructions
+* MySql
 
-* ...
+* MVC's
+
+* TDD
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+[Click Here](dry-reef-8694.herokuapp.com) to try the app. Sign up with any user name or email. Confirmation emails are not sent. Feel free to add posts, I will continue to seed the app with topics as time progresses.

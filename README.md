@@ -27,4 +27,4 @@ Highlights:
 * TDD
 
 
-[Click Here](dry-reef-8694.herokuapp.com) to try the app. Sign up with any user name or email. Confirmation emails are not sent. Feel free to add posts, I will continue to seed the app with topics as time progresses.
+[Click Here](https://dry-reef-8694.herokuapp.com/) to try the app. Sign up with any user name or email. Confirmation emails are not sent. Feel free to add posts, I will continue to seed the app with topics as time progresses.
